@@ -1,0 +1,11 @@
+--- eve-0.3.0/src/bin/Makefile.am.orig	2010-11-11 13:56:58.000000000 +0100
++++ eve-0.3.0/src/bin/Makefile.am	2012-01-23 17:23:29.776966299 +0100
+@@ -18,7 +18,7 @@
+ bin_PROGRAMS += eve_ql
+ endif
+ 
+-eve_LDADD = @ELEMENTARY_LIBS@ @EWEBKIT_LIBS@ @EDBUS_LIBS@
++eve_LDADD = @ELEMENTARY_LIBS@ @EWEBKIT_LIBS@ @EDBUS_LIBS@ -lm
+ eve_SOURCES = main.c view.c chrome.c eve_state.c
+ 
+ if BUILD_QUICKLAUNCH

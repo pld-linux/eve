@@ -1,0 +1,65 @@
+--- eve-0.3.0/src/bin/chrome.c.orig	2010-12-03 22:38:47.000000000 +0100
++++ eve-0.3.0/src/bin/chrome.c	2012-01-23 17:22:27.186964202 +0100
+@@ -340,7 +340,7 @@
+ static const Elm_Gengrid_Item_Class gic_default = {
+    .func = {
+        .label_get = tab_grid_label_get,
+-       .icon_get = tab_grid_icon_get,
++       .content_get = tab_grid_icon_get,
+        .state_get = tab_grid_state_get,
+        .del = tab_grid_del
+     }
+@@ -349,7 +349,7 @@
+ static const Elm_Genlist_Item_Class glic_default = {
+    .func = {
+        .label_get = more_label_get,
+-       .icon_get = more_icon_get,
++       .content_get = more_icon_get,
+        .state_get = more_state_get,
+        .del = more_del
+     },
+@@ -359,7 +359,7 @@
+ static const Elm_Genlist_Item_Class glic_config = {
+    .func = {
+        .label_get = more_label_get,
+-       .icon_get = more_icon_get,
++       .content_get = more_icon_get,
+        .state_get = more_state_get,
+        .del = more_del
+     },
+@@ -369,7 +369,7 @@
+ static const Elm_Genlist_Item_Class glic_config_selectable = {
+    .func = {
+        .label_get = more_label_get,
+-       .icon_get = more_icon_get,
++       .content_get = more_icon_get,
+        .state_get = more_state_get,
+        .del = more_del
+     },
+@@ -379,7 +379,7 @@
+ static const Elm_Genlist_Item_Class glic_separator = {
+    .func = {
+        .label_get = NULL,
+-       .icon_get = NULL,
++       .content_get = NULL,
+        .state_get = NULL,
+        .del = more_del
+     },
+@@ -389,7 +389,7 @@
+ static const Elm_Genlist_Item_Class glic_config_list = {
+    .func = {
+        .label_get = list_label_get,
+-       .icon_get = more_icon_get,
++       .content_get = more_icon_get,
+        .state_get = more_state_get,
+        .del = more_del
+     },
+@@ -399,7 +399,7 @@
+ static const Elm_Genlist_Item_Class glic_page = {
+    .func = {
+        .label_get = page_label_get,
+-       .icon_get = more_icon_get,
++       .content_get = more_icon_get,
+        .state_get = more_state_get,
+        .del = more_del
+     },
