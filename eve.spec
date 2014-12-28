@@ -16,7 +16,7 @@ BuildRequires:	e_dbus-devel
 BuildRequires:	edje
 BuildRequires:	elementary-devel >= 0.8.0
 BuildRequires:	ewebkit-devel
-BuildRequires:	gettext-devel >= 0.12.1
+BuildRequires:	gettext-tools >= 0.12.1
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 Requires:	elementary-libs >= 0.8.0
